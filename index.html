@@ -8,10 +8,15 @@
 </head>
 
 <body>
+  <!-- /// First app:  updating text -->
   <div id="app">
     {{ message }}
   </div>
 
+  <hr />
+
+
+  <!-- /// Second app:  binding a title message -->
   <div id="app-2">
     <span v-bind:title="message">
       Hover your mouse over me for a few seconds
@@ -19,6 +24,26 @@
     </span>
   </div>
 
+  <hr />
+
+
+  <!-- /// Third app: conditional DOM text -->
+  <div id="app-3">
+    <span v-if="seen">Now you see me</span>
+  </div>
+
+
+  <!-- /// Fourth app: for loop for list -->
+  <div id="app-4">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+
+
+  <!-- /// Scripts -->
   <script src="index.js"></script>
 </body>
 </html>

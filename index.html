@@ -112,6 +112,18 @@
   <hr />
 
 
+  <!-- /// Eleventh app: Event listeners -->
+  <div id="app-11">
+    <ul>
+      <li v-for="name in names" v-text="name"></li>
+    </ul>
+
+    <input id="input-11" type="text" v-model="newName">
+
+    <button @click="addName">Add a Name</button> <!-- Use @ for shorthand of v-on -->
+  </div>
+
+
   <!-- /// Scripts -->
   <script src="index.js"></script>
 </body>

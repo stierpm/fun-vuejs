@@ -135,6 +135,23 @@ var app10 = new Vue({
 });
 
 
+/// Eleventh app:  Event listeners
+var app11 = new Vue({
+  el: '#app-11',
+
+  data: {
+    newName: '',
+    names: ['Joe', 'Jack', 'Susan', 'Betty'],
+  },
+
+  methods: {
+    addName() {
+      this.names.push(this.newName);
+      this.newName = '';
+    }
+  }
+});
+
 
 
 app.message = 'I have changed the data!';

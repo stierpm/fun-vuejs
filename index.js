@@ -37,6 +37,31 @@ var app4 = new Vue({
   }
 });
 
+
+/// Fourth app:  building list with for loop
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'Hello Vue.js!'
+  },
+  methods: {
+    reverseMessage: function () {
+      // Split string into characters, reverse, then join back into string.
+      this.message = this.message.split('').reverse().join('');
+    }
+  }
+});
+
+
+/// Sixth app: form input change
+var app6 = new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Hello Vue!'
+  }
+});
+
+
 app.message = 'I have changed the data!';
 
 app3.seen = false;

@@ -115,6 +115,28 @@ var app9 = new Vue({
 });
 
 
+/// Tenth app:  Using reactive data to create the DOM
+var app10 = new Vue({
+  el: '#app-10',
+
+  data: {
+    names: ['Joe', 'Jack', 'Susan', 'Betty'],
+  },
+
+  mounted () { // Vue function:  call vue app after it's been mounted to DOM
+    document.querySelector('#button-10').addEventListener('click', () => {
+      let name = document.querySelector('#input-10');
+
+      app10.names.push(name.value);
+
+      name.value = '';
+    });
+  }
+});
+
+
+
+
 app.message = 'I have changed the data!';
 
 app3.seen = false;

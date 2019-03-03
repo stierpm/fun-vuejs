@@ -106,6 +106,15 @@ var app8 = new Vue({
 });
 
 
+/// Ninth app:  HTML vs Plain Text
+var app9 = new Vue({
+  el: '#app-9',
+  data: {
+    color: '<span style="color: red;">This is red</span>',
+  }
+});
+
+
 app.message = 'I have changed the data!';
 
 app3.seen = false;

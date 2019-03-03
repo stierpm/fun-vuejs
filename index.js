@@ -1,3 +1,12 @@
+////
+/// Vue.Js
+///
+/// - When a Vue instance is created, it adds all the properties found in its data object to Vue’s reactivity system
+/// - A 'prop' is something you can add to a component that reflects a custom attribute
+/// - Data objects need to exist when app is created to be reactive / Can't add data objects to a Vue app on the fly
+/// -
+////
+
 /// First app:  update DOM text
 var app = new Vue({
   el: '#app',
@@ -81,7 +90,20 @@ var app7 = new Vue({
       { id: 2, text: 'Whatever else humans are supposed to eat' }
     ]
   }
-})
+});
+
+
+/// Eighth app:  Lifecycle function hooks
+var app8 = new Vue({
+  el: '#app-8',
+  data: {
+    a: 1
+  },
+  created: function () {
+    // `this` points to the vm instance
+    console.log('a is: ' + this.a)
+  }
+});
 
 
 app.message = 'I have changed the data!';

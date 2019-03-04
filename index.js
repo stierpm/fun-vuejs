@@ -15,6 +15,8 @@ var app = new Vue({
   }
 });
 
+app.message = 'I have changed the data!';
+
 
 /// Second app:  bind title attribute to DOM text
 var app2 = new Vue({
@@ -32,6 +34,8 @@ var app3 = new Vue({
     seen: true
   }
 });
+
+app3.seen = false;
 
 
 /// Fourth app:  building list with for loop
@@ -151,9 +155,3 @@ var app11 = new Vue({
     }
   }
 });
-
-
-
-app.message = 'I have changed the data!';
-
-app3.seen = false;

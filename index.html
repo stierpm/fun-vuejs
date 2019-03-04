@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <!-- /// First app:  updating text -->
+  <!-- /// App 01:  Updating text. -->
   <div id="app">
     {{ message }}
   </div>
@@ -16,7 +16,7 @@
   <hr />
 
 
-  <!-- /// Second app:  binding a title message -->
+  <!-- /// App 02:  Binding a title message. -->
   <div id="app-2">
     <span v-bind:title="message">
       Hover your mouse over me for a few seconds
@@ -27,7 +27,7 @@
   <hr />
 
 
-  <!-- /// Third app: conditional DOM text -->
+  <!-- /// App 03:  Conditional DOM text. -->
   <div id="app-3">
     <span v-if="seen">Now you see me</span>
   </div>
@@ -35,7 +35,7 @@
   <hr />
 
 
-  <!-- /// Fourth app: for loop for list -->
+  <!-- /// App 04:  For loop for lists. -->
   <div id="app-4">
     <ol>
       <li v-for="todo in todos">
@@ -47,7 +47,7 @@
   <hr />
 
 
-  <!-- /// Fifth app:  on click functions -->
+  <!-- /// App 05:  On click functions. -->
   <div id="app-5">
     <p>{{ message }}</p>
     <button v-on:click="reverseMessage">Reverse Message</button>
@@ -56,7 +56,7 @@
   <hr />
 
 
-  <!-- /// Sixth app: change on form input -->
+  <!-- /// App 06:  Change on form input. -->
   <div id="app-6">
     <p>{{ message }}</p>
     <input v-model="message">
@@ -65,7 +65,7 @@
   <hr />
 
 
-  <!-- /// Seventh app:  registering app components -->
+  <!-- /// App 07:  Registering app components. -->
   <div id="app-7">
     <ol>
       <!--
@@ -83,7 +83,7 @@
   </div>
 
 
-  <!-- /// Eighth app: Lifecycle function hooks -->
+  <!-- /// App 08:  Lifecycle function hooks. -->
   <div id="app-8">
     <p>{{ a }}</p>
   </div>
@@ -91,7 +91,7 @@
   <hr />
 
 
-  <!-- /// Ninth app: HTML vs Plain text -->
+  <!-- /// App 09:  HTML vs Plain text. -->
   <div id="app-9">
     <p>This text is {{ color }}</p>
     <p><span v-html="color"></span></p>
@@ -100,7 +100,7 @@
   <hr />
 
 
-  <!-- /// Tenth app: Push reactive data into DOM -->
+  <!-- /// App 10:  Push reactive data into DOM. -->
   <div id="app-10">
     <ul>
       <li v-for="name in names" v-text="name"></li>
@@ -114,7 +114,7 @@
   <hr />
 
 
-  <!-- /// Eleventh app: Event listeners -->
+  <!-- /// App 11:  Event listeners. -->
   <div id="app-11">
     <ul>
       <li v-for="name in names" v-text="name"></li>
@@ -123,6 +123,14 @@
     <input id="input-11" type="text" v-model="newName">
 
     <button @click="addName">Add a Name</button> <!-- Use @ for shorthand of v-on -->
+  </div>
+
+  <hr />
+
+
+  <!-- /// App 12:  Binding attributes to DOM elements dynamically. -->
+  <div id="app-12">
+    <div class="box" :class="{ 'is-loading' : isLoading }" @click="toggleClass">Click Me</div>
   </div>
 
 

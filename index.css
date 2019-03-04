@@ -1,0 +1,15 @@
+/* /// App 12: Changing attributes dynamically */
+#app-12 .box {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  background: olivedrab;
+  color: beige;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-12 .box.is-loading {
+  background: purple;
+  color: palegoldenrod;
+}
